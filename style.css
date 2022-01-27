@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    font-family: roboto;
+    text-align: center;
+    padding: 100px 0;
+    background-color: #0B132B;
+    /* color: #6fffe9; */
+    color: white;
+}
+
+h6 {
+    font-family: montserrat;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: montserrat;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+/* .password-field {
+    background-color: cornflowerblue;
+    padding: 20px;
+} */
+.password-field::selection{
+    background-color: none;
+} 
+.password-field #pwd {
+    width: 50%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 2px;
+}
+
+.password-field #pwd:focus {
+    border: none;
+    outline: none;
+}
+
+.password-field #copy-pwd {
+    font-family: montserrat;
+    font-weight: 600;
+    padding: 10px 15px;
+    color: black;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.password-field #copy-pwd:hover {
+    color: green;
+    background-color: white;
+}
+
+.password-field #create-pwd {
+    font-family: montserrat;
+    font-weight: 600;
+    padding: 10px 15px;
+    color: black;
+    background: darkslategrey;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.password-field #create-pwd:hover {
+    background: black;
+    color: white;
+}
+label {
+    background-color: #3A506B;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+select {
+    background-color: greenyellow;
+    color: black;
+    border: none;
+    outline: none;
+    font-family: montserrat;
+    padding: 10px;
+}
+
+select option {
+    padding: 10px;
+}
+
+
+/* Alert Modal */
+.modal{
+    background-color: yellow;
+    display: none;
+    color: black;
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-family: montserrat;
+    position: fixed;
+    top: 20vh;
+    left: calc(50vw - 50px);
+    animation: modal-animation .5s ;
+}
+@keyframes modal-animation {
+    0%{
+        top: 45vh;
+    }
+    100%{
+        top: 20vh;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure PassWord Generator - Vanilla JavaScript </title>
+    <link rel="shortcut icon" href="./lock-password-line.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h6>PassWord Generator</h6>
+        <h2>Generate a Secure Password</h2>
+        <section class="password">
+            <section class="password-field">
+                <input type="text" id="pwd">
+                <button id="copy-pwd">Copy</button>
+                <button id="create-pwd">Create</button>
+            </section><br>
+            <label for="password-type">Choose Password Level</label><br><br>
+            <select name="password-type" id="password-type">
+                <option value="Easy">Low Secure PassWord</option>
+                <option value="Medium">Medium Secure PassWord</option>
+                <option value="Hard">Highly Secure PassWord</option>
+            </select>
+
+        </section>
+
+    </section>
+
+
+
+
+    <!-- Alert modal when password copied -->
+    <div class="modal">
+        <p>copied!</p>
+    </div>
+
+
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
